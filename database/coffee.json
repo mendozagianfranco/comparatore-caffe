@@ -1,0 +1,202 @@
+[
+    {
+        "title": "Espresso Arabica",
+        "category": "Beans",
+        "brand": "Caffè Nero",
+        "origin": "Colombia",
+        "roastLevel": "medium",
+        "price": 12.5,
+        "weight": 250,
+        "caffeineContent": 95,
+        "flavorNotes": [
+            "cioccolato",
+            "nocciola"
+        ],
+        "intensity": 7,
+        "isDecaf": false,
+        "id": 1,
+        "createdAt": "2025-09-15T13:29:51.676Z",
+        "updatedAt": "2025-09-15T13:29:51.676Z",
+        "imageUrl": "https://images.unsplash.com/photo-1701256406762-9036005cca42?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "French Roast",
+        "category": "Ground",
+        "brand": "Lavazza",
+        "origin": "Brasile",
+        "roastLevel": "dark",
+        "price": 10,
+        "weight": 500,
+        "caffeineContent": 110,
+        "flavorNotes": [
+            "caramello",
+            "cacao"
+        ],
+        "intensity": 8,
+        "isDecaf": false,
+        "id": 2,
+        "createdAt": "2025-09-15T13:30:05.676Z",
+        "updatedAt": "2025-09-15T13:30:05.676Z",
+        "imageUrl": "https://images.unsplash.com/photo-1510776537653-6d0da167186c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Morning Blend",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Etiopia",
+        "roastLevel": "light",
+        "price": 15,
+        "weight": 100,
+        "caffeineContent": 80,
+        "flavorNotes": [
+            "frutti rossi",
+            "miele"
+        ],
+        "intensity": 5,
+        "isDecaf": false,
+        "id": 3,
+        "createdAt": "2025-09-15T13:30:14.109Z",
+        "updatedAt": "2025-09-15T13:30:14.109Z",
+        "imageUrl": "https://images.unsplash.com/photo-1678097539755-447a08d9b51e?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Decaf Espresso",
+        "category": "Beans",
+        "brand": "Illy",
+        "origin": "Guatemala",
+        "roastLevel": "medium",
+        "price": 13,
+        "weight": 250,
+        "caffeineContent": 0,
+        "flavorNotes": [
+            "nocciola",
+            "vaniglia"
+        ],
+        "intensity": 6,
+        "isDecaf": true,
+        "id": 4,
+        "createdAt": "2025-09-15T13:30:35.270Z",
+        "updatedAt": "2025-09-15T13:30:35.270Z",
+        "imageUrl": "https://images.unsplash.com/photo-1609007607470-60928593fdd7?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Italian Roast",
+        "category": "Ground",
+        "brand": "Segafredo",
+        "origin": "Brasile",
+        "roastLevel": "dark",
+        "price": 9,
+        "weight": 500,
+        "caffeineContent": 120,
+        "flavorNotes": [
+            "cioccolato fondente",
+            "spezie"
+        ],
+        "intensity": 9,
+        "isDecaf": false,
+        "id": 5,
+        "createdAt": "2025-09-15T13:30:45.396Z",
+        "updatedAt": "2025-09-15T13:30:45.396Z",
+        "imageUrl": "https://images.unsplash.com/photo-1581447355330-7402a2f6f93e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Colombian Supremo",
+        "category": "Beans",
+        "brand": "Starbucks",
+        "origin": "Colombia",
+        "roastLevel": "medium",
+        "price": 14,
+        "weight": 250,
+        "caffeineContent": 100,
+        "flavorNotes": [
+            "caramello",
+            "frutta secca"
+        ],
+        "intensity": 7,
+        "isDecaf": false,
+        "id": 6,
+        "createdAt": "2025-09-15T13:30:55.164Z",
+        "updatedAt": "2025-09-15T13:30:55.164Z",
+        "imageUrl": "https://images.unsplash.com/photo-1622985345414-3264b2ea5761?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Ethiopian Yirgacheffe",
+        "category": "Ground",
+        "brand": "Caffè Nero",
+        "origin": "Etiopia",
+        "roastLevel": "light",
+        "price": 16,
+        "weight": 250,
+        "caffeineContent": 85,
+        "flavorNotes": [
+            "floreale",
+            "citrus"
+        ],
+        "intensity": 6,
+        "isDecaf": false,
+        "id": 7,
+        "createdAt": "2025-09-15T13:31:02.277Z",
+        "updatedAt": "2025-09-15T13:31:02.277Z",
+        "imageUrl": "https://images.unsplash.com/photo-1595304896439-dbbee5bf740d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Vanilla Latte Capsule",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Vietnam",
+        "roastLevel": "medium",
+        "price": 18,
+        "weight": 120,
+        "caffeineContent": 90,
+        "flavorNotes": [
+            "vaniglia",
+            "latte"
+        ],
+        "intensity": 5,
+        "isDecaf": false,
+        "id": 8,
+        "createdAt": "2025-09-15T13:31:08.395Z",
+        "updatedAt": "2025-09-15T13:31:08.395Z",
+        "imageUrl": "https://images.unsplash.com/photo-1649897657204-23f4dd5e125d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Caramel Macchiato Beans",
+        "category": "Beans",
+        "brand": "Starbucks",
+        "origin": "Brasile",
+        "roastLevel": "medium",
+        "price": 17,
+        "weight": 300,
+        "caffeineContent": 95,
+        "flavorNotes": [
+            "caramello",
+            "latte"
+        ],
+        "intensity": 6,
+        "isDecaf": false,
+        "id": 9,
+        "createdAt": "2025-09-15T13:31:13.934Z",
+        "updatedAt": "2025-09-15T13:31:13.934Z",
+        "imageUrl": "https://images.unsplash.com/photo-1594421606417-69c20195f1d6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Morning Decaf Blend",
+        "category": "Ground",
+        "brand": "Illy",
+        "origin": "Colombia",
+        "roastLevel": "light",
+        "price": 12,
+        "weight": 250,
+        "caffeineContent": 0,
+        "flavorNotes": [
+            "miele",
+            "frutti rossi"
+        ],
+        "intensity": 4,
+        "isDecaf": true,
+        "id": 10,
+        "createdAt": "2025-09-15T13:31:20.525Z",
+        "updatedAt": "2025-09-15T13:31:20.525Z",
+        "imageUrl": "https://images.unsplash.com/photo-1600785368693-5ae725c1106d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+]
