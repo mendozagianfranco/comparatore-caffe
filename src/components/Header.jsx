@@ -5,10 +5,6 @@ export default function Header() {
         <nav className="navbar ">
             <div className="container-fluid">
                 <Link className="fs-4 title" to={'/'}>SorSo a SorSo</Link>
-                <form className="d-flex w-25" role="search">
-                    <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
-                    <button className="btn btn-accent" type="submit">Search</button>
-                </form>
                 <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" role='button'><i className="fa-solid fa-heart text-danger me-1"></i>Preferiti</span>
 
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
