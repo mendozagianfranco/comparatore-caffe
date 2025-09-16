@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <nav className="navbar ">
             <div className="container-fluid">
-                <Link className="navbar-brand title" to={'/'}>SorSo a SorSo</Link>
+                <Link className="fs-4 title" to={'/'}>SorSo a SorSo</Link>
                 <form className="d-flex w-25" role="search">
                     <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
                     <button className="btn btn-accent" type="submit">Search</button>
