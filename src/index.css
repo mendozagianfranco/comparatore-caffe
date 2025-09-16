@@ -72,6 +72,7 @@ nav input::placeholder {
     max-width: 1850px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 80px
 }
 
 .card {
@@ -103,4 +104,37 @@ nav input::placeholder {
 
 .badge.ground {
     background-color: var(--color-ground);
+}
+
+.compare-bar {
+    background-color: var(--color-latte);
+    border-top: 2px solid var(--color-accent);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 80px;
+}
+
+.compare-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-moka);
+    text-wrap: nowrap;
+}
+
+.btn-compare:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.toast {
+    z-index: 2;
 }

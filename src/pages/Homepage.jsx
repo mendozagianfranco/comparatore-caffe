@@ -4,6 +4,23 @@ import FavoriteButton from '../components/FavouriteButton';
 
 export default function Homepage() {
     const [coffees, setCoffees] = useState([]);
+    const [compareList, setCompareList] = useState([]);
+    const [showMaxMessage, setShowMaxMessage] = useState(false);
+
+    function handleRemoveCompare(id) {
+        setCompareList(prev => prev.filter(coffee => coffee.id !== id));
+    }
+
+    function handleCompare(coffee) {
+        setCompareList(prev => {
+            if (prev.length >= 5) {
+                setShowMaxMessage(true);
+                setTimeout(() => setShowMaxMessage(false), 2000);
+                return prev;
+            };
+            return [...prev, coffee];
+        });
+    }
 
     useEffect(() => {
         fetch("http://localhost:3001/coffees")
@@ -19,8 +36,6 @@ export default function Homepage() {
 
     return (
         <>
-
-
             <div className="my-container text-center ">
                 <div className="row justify-content-center mt-4">
                     <div className="col-12 col-md-6">
@@ -78,8 +93,12 @@ export default function Homepage() {
                                                 </p>
                                             </Link>
                                             <div className="mt-3 d-flex gap-2">
-                                                <button className="btn btn-accent">
-                                                    Confronta
+                                                <button
+                                                    className="btn btn-compare"
+                                                    onClick={() => handleCompare(coffee)}
+                                                    disabled={compareList.some(c => c.id === coffee.id)}
+                                                >
+                                                    {compareList.some(c => c.id === coffee.id) ? "Aggiunto" : "Confronta"}
                                                 </button>
                                                 <FavoriteButton />
                                             </div>
@@ -91,5 +110,40 @@ export default function Homepage() {
                     </div>
                 </div>
             </div >
+
+            {showMaxMessage && (
+                <div
+                    className="toast show align-items-center text-bg-warning border-0 position-fixed bottom-0 start-50 translate-middle-x m-4"
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                >
+                    <div className="d-flex">
+                        <div className="toast-body">
+                            Puoi confrontare massimo 5 caffè
+                        </div>
+                    </div>
+                </div>
+            )}
+            {compareList.length > 0 && (
+                <div className="compare-bar d-flex align-items-center justify-content-between sticky-bottom">
+                    <div className="compare-list d-flex gap-2 overflow-auto">
+                        {compareList.map(coffee => (
+                            <div key={coffee.id} className="compare-item d-flex align-items-center gap-1">
+                                <span>{coffee.title}</span>
+                                <button
+                                    className="btn btn-sm btn-outline-danger"
+                                    onClick={() => handleRemoveCompare(coffee.id)}
+                                >
+                                    <i className="fa-solid fa-x"></i>
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                    <button className="btn btn-compare" disabled={compareList.length < 2}>
+                        Confronta ora
+                    </button>
+                </div>
+            )}
         </>);
 };

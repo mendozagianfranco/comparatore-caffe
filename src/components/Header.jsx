@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <nav className="navbar ">
+        <nav className="navbar sticky-top ">
             <div className="container-fluid">
                 <Link className="fs-4 title" to={'/'}>SorSo a SorSo</Link>
                 <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" role='button'><i className="fa-solid fa-heart text-danger me-1"></i>Preferiti</span>
