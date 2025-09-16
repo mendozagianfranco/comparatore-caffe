@@ -3,6 +3,8 @@
     --color-latte: #FFF8E1;
     --color-moka: #795548;
     --color-accent: #FF7043;
+    --color-beans: #6d4c41;
+    --color-ground: #a1887f;
 }
 
 a {
@@ -49,4 +51,46 @@ nav input::placeholder {
 
 .btn-accent:hover {
     background-color: #e65c2e;
+}
+
+.sidebar {
+    background-color: var(--color-espresso);
+    color: var(--color-latte)
+}
+
+.my-container {
+    max-width: 1850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: var(--color-latte);
+    border-left: 5px solid var(--color-accent);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+    color: #fff;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.badge.beans {
+    background-color: var(--color-beans);
+}
+
+.badge.capsule {
+    background-color: var(--color-accent);
+}
+
+.badge.ground {
+    background-color: var(--color-ground);
 }
