@@ -53,6 +53,16 @@ nav input::placeholder {
     background-color: #e65c2e;
 }
 
+.btn-compare {
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+}
+
+.btn-compare:hover {
+    background-color: #e65c2e;
+}
+
 .sidebar {
     background-color: var(--color-espresso);
     color: var(--color-latte)

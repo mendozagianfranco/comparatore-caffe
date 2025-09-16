@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import FavoriteButton from '../components/FavouriteButton';
 
 export default function Homepage() {
     const [coffees, setCoffees] = useState([]);
@@ -65,18 +66,26 @@ export default function Homepage() {
                     <div className="col-9">
                         <div className="row g-3">
                             {coffees.map(coffee => (
-                                <Link to={`/coffees/${coffee.id}`} key={coffee.id} className="col-12 col-md-6">
+                                <div key={coffee.id} className="col-12 col-md-6">
                                     <div className="card mb-3">
                                         <div className="card-body text-start">
-                                            <h5 className="card-title">{coffee.title}</h5>
-                                            <p className="card-text">
-                                                <span className={`badge ${categoryClass[coffee.category] || ""}`}>
-                                                    {coffee.category}
-                                                </span>
-                                            </p>
+                                            <Link to={`/coffees/${coffee.id}`} className="text-decoration-none text-dark">
+                                                <h5 className="card-title">{coffee.title}</h5>
+                                                <p className="card-text">
+                                                    <span className={`badge ${categoryClass[coffee.category] || ""}`}>
+                                                        {coffee.category}
+                                                    </span>
+                                                </p>
+                                            </Link>
+                                            <div className="mt-3 d-flex gap-2">
+                                                <button className="btn btn-accent">
+                                                    Confronta
+                                                </button>
+                                                <FavoriteButton />
+                                            </div>
                                         </div>
                                     </div>
-                                </Link>
+                                </div>
                             ))}
                         </div>
                     </div>
