@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import FavoriteButton from '../components/FavouriteButton';
+import FavouriteButton from '../components/FavouriteButton';
 
 export default function Homepage() {
     const [coffees, setCoffees] = useState([]);
     const [compareList, setCompareList] = useState([]);
     const [showMaxMessage, setShowMaxMessage] = useState(false);
+
 
     function handleRemoveCompare(id) {
         setCompareList(prev => prev.filter(coffee => coffee.id !== id));
@@ -100,7 +101,7 @@ export default function Homepage() {
                                                 >
                                                     {compareList.some(c => c.id === coffee.id) ? "Aggiunto" : "Confronta"}
                                                 </button>
-                                                <FavoriteButton />
+                                                <FavouriteButton coffee={coffee} />
                                             </div>
                                         </div>
                                     </div>

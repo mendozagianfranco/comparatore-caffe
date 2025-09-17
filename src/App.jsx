@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout';
 import Homepage from './pages/Homepage';
 import CoffeeDetailPage from './pages/CoffeeDetailPage';
-import { FavouriteProvider } from './contexts/FavoriteContext';
+import { FavouriteProvider } from './contexts/FavouriteContext';
 
 function App() {
   return (
