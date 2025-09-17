@@ -1,11 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import FavouriteButton from '../components/FavouriteButton';
+
+function debounce(callback, delay) {
+    let timer;
+    return (value) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            callback(value);
+        }, delay);
+    };
+}
 
 export default function Homepage() {
     const [coffees, setCoffees] = useState([]);
     const [compareList, setCompareList] = useState([]);
     const [showMaxMessage, setShowMaxMessage] = useState(false);
+    const [sortCategory, setSortCategory] = useState('');
+    const [sortOrder, setSortOrder] = useState(1);
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const debouncedSetSearchQuery = useCallback(debounce(setSearchQuery, 500), []);
 
 
     function handleRemoveCompare(id) {
@@ -35,6 +50,25 @@ export default function Homepage() {
         Macinato: "ground"
     };
 
+    const filteredAndSortedCoffees = useMemo(() => {
+        let filteredCoffees = [...coffees];
+        if (searchQuery.trim() !== "") {
+            const lowerQuery = searchQuery.toLowerCase();
+            filteredCoffees = filteredCoffees.filter(coffee =>
+                coffee.title.toLowerCase().includes(lowerQuery)
+            );
+        }
+
+        if (sortCategory === 'Chicchi') {
+            filteredCoffees = filteredCoffees.filter(c => c.category === 'Chicchi');
+        } else if (sortCategory === 'Capsule') {
+            filteredCoffees = filteredCoffees.filter(c => c.category === 'Capsule');
+        } else if (sortCategory === 'Macinato') {
+            filteredCoffees = filteredCoffees.filter(c => c.category === 'Macinato');
+        }
+        return filteredCoffees.sort((a, b) => a.title.localeCompare(b.title) * sortOrder);
+    }, [coffees, sortCategory, sortOrder, searchQuery]);
+
     return (
         <>
             <div className="my-container text-center ">
@@ -44,6 +78,7 @@ export default function Homepage() {
                             type="text"
                             className="form-control"
                             placeholder="Cerca un caffè..."
+                            onChange={(e) => debouncedSetSearchQuery(e.target.value)}
                         />
                     </div>
                 </div>
@@ -55,6 +90,8 @@ export default function Homepage() {
                                 <select
                                     id="category"
                                     className="form-select"
+                                    value={sortCategory}
+                                    onChange={(e) => setSortCategory(e.target.value)}
                                 >
                                     <option value="">Tutte</option>
                                     <option value="Chicchi">Chicchi</option>
@@ -65,13 +102,13 @@ export default function Homepage() {
                             <div className="mb-3 text-start">
                                 <h5 >Ordine alfabetico</h5>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked />
+                                    <input className="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked={sortOrder === 1} onChange={() => setSortOrder(1)} />
                                     <label className="form-check-label" htmlFor="radioDefault1">
                                         A - Z
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="radioDefault" id="radioDefault2" />
+                                    <input className="form-check-input" type="radio" name="radioDefault" id="radioDefault2" onChange={() => setSortOrder(-1)} />
                                     <label className="form-check-label" htmlFor="radioDefault2">
                                         Z - A
                                     </label>
@@ -81,7 +118,7 @@ export default function Homepage() {
                     </div>
                     <div className="col-9">
                         <div className="row g-3">
-                            {coffees.map(coffee => (
+                            {filteredAndSortedCoffees.map(coffee => (
                                 <div key={coffee.id} className="col-12 col-md-6">
                                     <div className="card mb-3">
                                         <div className="card-body text-start">
