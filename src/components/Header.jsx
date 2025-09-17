@@ -1,8 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useFavourite } from '../contexts/FavouriteContext';
 
 export default function Header() {
     const { favourites, setFavourites } = useFavourite();
+    const navigate = useNavigate();
+
+    const handleClick = (id) => {
+        setTimeout(() => {
+            navigate(`/coffees/${id}`);
+        }, 100);
+    };
 
     return (
         <nav className="navbar sticky-top ">
@@ -19,10 +26,10 @@ export default function Header() {
                         {favourites.length === 0 ? 'Nessun Preferito...' : favourites.map((coffee) => (
                             <div key={coffee.id} className="card mb-2 shadow-sm ">
                                 <div className="card-body d-flex justify-content-between align-items-center py-2 px-3">
-                                    <Link to={`/coffees/${coffee.id}`}>
+                                    <div onClick={() => handleClick(coffee.id)} data-bs-dismiss="offcanvas">
                                         <h6 className="mb-0 fw-semibold">{coffee.title}</h6>
                                         <small className="text-muted">{coffee.category}</small>
-                                    </Link>
+                                    </div>
                                     <button
                                         onClick={() => setFavourites(prev => prev.filter(c => c.id !== coffee.id))}
                                         className="btn btn-sm btn-outline-danger"
