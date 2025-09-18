@@ -25,23 +25,28 @@ export default function Header() {
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                        {favourites.length === 0 ? 'Nessun Preferito...' : favourites.map((coffee) => (
-                            <div key={coffee.id} className="card mb-2 shadow-sm ">
-                                <div className="card-body d-flex justify-content-between align-items-center py-2 px-3">
-                                    <div onClick={() => handleClick(coffee.id)} data-bs-dismiss="offcanvas">
-                                        <h6 className="mb-0 fw-semibold">{coffee.title}</h6>
-                                        <small className="text-muted">{coffee.category}</small>
+                        {favourites.length === 0 ?
+                            <>
+                                <h5>La tua lista dei preferiti è vuota</h5>
+                                <p>Non preoccuparti, ci sono ancora tanti caffè da scoprire! Salva quelli che ami di più e li troverai qui</p>
+                            </>
+                            : favourites.map((coffee) => (
+                                <div key={coffee.id} className="card mb-2 shadow-sm ">
+                                    <div className="card-body d-flex justify-content-between align-items-center py-2 px-3">
+                                        <div onClick={() => handleClick(coffee.id)} data-bs-dismiss="offcanvas">
+                                            <h6 className="mb-0 fw-semibold">{coffee.title}</h6>
+                                            <small className="text-muted">{coffee.category}</small>
+                                        </div>
+                                        <button
+                                            onClick={() => setFavourites(prev => prev.filter(c => c.id !== coffee.id))}
+                                            className="btn btn-sm btn-outline-danger"
+                                            title="Rimuovi dai preferiti"
+                                        >
+                                            <i className="fa-solid fa-xmark"></i>
+                                        </button>
                                     </div>
-                                    <button
-                                        onClick={() => setFavourites(prev => prev.filter(c => c.id !== coffee.id))}
-                                        className="btn btn-sm btn-outline-danger"
-                                        title="Rimuovi dai preferiti"
-                                    >
-                                        <i className="fa-solid fa-xmark"></i>
-                                    </button>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
 
                     </div>
                 </div>

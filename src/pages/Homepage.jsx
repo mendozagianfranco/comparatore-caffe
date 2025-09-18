@@ -66,6 +66,7 @@ export default function Homepage() {
         return filteredCoffees.sort((a, b) => a.title.localeCompare(b.title) * sortOrder);
     }, [coffees, sortCategory, sortOrder, searchQuery]);
 
+
     return (
         <>
             <div className="my-container text-center ">
@@ -115,7 +116,7 @@ export default function Homepage() {
                     </div>
                     <div className="col-9">
                         <div className="row g-3">
-                            {filteredAndSortedCoffees.map(coffee => (
+                            {filteredAndSortedCoffees.length > 0 ? filteredAndSortedCoffees.map(coffee => (
                                 <div key={coffee.id} className="col-12 col-md-6">
                                     <div className="card mb-3">
                                         <div className="card-body text-start">
@@ -140,7 +141,10 @@ export default function Homepage() {
                                         </div>
                                     </div>
                                 </div>
-                            ))}
+                            )) : <div className="text-center p-4">
+                                <h5><i className="fa-solid fa-mug-hot"></i> Nessun caffè trovato</h5>
+                                <p>Abbiamo cercato dappertutto, ma il caffè che cerchi deve essere dietro la moka...</p>
+                            </div>}
                         </div>
                     </div>
                 </div>
