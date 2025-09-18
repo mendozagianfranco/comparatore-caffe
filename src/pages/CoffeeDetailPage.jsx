@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../contexts/GlobalContext';
+import FavoriteButton from '../components/FavouriteButton';
 
 export default function CoffeeDetailPage() {
 
@@ -85,14 +86,14 @@ export default function CoffeeDetailPage() {
                         </div>
                     )}
                     <div className="mt-4">
-                        <button className="btn btn-accent me-3">Aggiungi ai Preferiti</button>
                         <button
-                            className="btn btn-outline-dark"
+                            className="btn btn-compare"
                             onClick={() => handleCompare(coffee)}
                             disabled={compareList.some(c => c.id === coffee.id)}
                         >
                             {compareList.some(c => c.id === coffee.id) ? "Aggiunto" : "Confronta"}
                         </button>
+                        <FavoriteButton coffee={coffee} />
                     </div>
                 </div>
             </div>
