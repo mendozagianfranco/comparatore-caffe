@@ -151,3 +151,17 @@ nav input::placeholder {
     object-position: bottom;
     border-radius: 8px;
 }
+
+.modal-xl {
+    max-width: 1200px;
+}
+
+.modal-content {
+    background-color: var(--color-latte);
+}
+
+.compare-table .first-col {
+    background-color: var(--color-ground);
+    color: var(--color-latte);
+    font-weight: 500;
+}

@@ -1,4 +1,5 @@
 import { useGlobalContext } from '../contexts/GlobalContext';
+import ModalCompare from './ModalCompare';
 import ToastMessage from './ToastMessage';
 export default function CompareList() {
 
@@ -10,6 +11,7 @@ export default function CompareList() {
 
     return (
         <>
+            <ModalCompare />
             <ToastMessage />
             {compareList.length > 0 && (
                 <div className="compare-bar d-flex align-items-center justify-content-between sticky-bottom">
@@ -26,7 +28,7 @@ export default function CompareList() {
                             </div>
                         ))}
                     </div>
-                    <button className="btn btn-compare" disabled={compareList.length < 2}>
+                    <button className="btn btn-compare" data-bs-toggle="modal" data-bs-target="#coffeeModal" disabled={compareList.length < 2}>
                         Confronta ora
                     </button>
                 </div>
