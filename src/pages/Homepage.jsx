@@ -165,7 +165,7 @@ export default function Homepage() {
             )}
             {compareList.length > 0 && (
                 <div className="compare-bar d-flex align-items-center justify-content-between sticky-bottom">
-                    <div className="compare-list d-flex gap-2 overflow-auto">
+                    <div className="d-flex gap-2 overflow-auto">
                         {compareList.map(coffee => (
                             <div key={coffee.id} className="compare-item d-flex align-items-center gap-1">
                                 <span>{coffee.title}</span>
