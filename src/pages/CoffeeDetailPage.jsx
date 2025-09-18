@@ -1,10 +1,24 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useGlobalContext } from '../contexts/GlobalContext';
 
 export default function CoffeeDetailPage() {
 
     const { id } = useParams();
     const [coffee, setCoffee] = useState({});
+    const { compareList, setCompareList } = useGlobalContext();
+    const { setShowMaxMessage } = useGlobalContext();
+
+    function handleCompare(coffee) {
+        setCompareList(prev => {
+            if (prev.length >= 5) {
+                setShowMaxMessage(true);
+                setTimeout(() => setShowMaxMessage(false), 2000);
+                return prev;
+            };
+            return [...prev, coffee];
+        });
+    }
 
     useEffect(() => {
         fetch(`http://localhost:3001/coffees/${id}`)
@@ -72,7 +86,13 @@ export default function CoffeeDetailPage() {
                     )}
                     <div className="mt-4">
                         <button className="btn btn-accent me-3">Aggiungi ai Preferiti</button>
-                        <button className="btn btn-outline-dark">Confronta</button>
+                        <button
+                            className="btn btn-outline-dark"
+                            onClick={() => handleCompare(coffee)}
+                            disabled={compareList.some(c => c.id === coffee.id)}
+                        >
+                            {compareList.some(c => c.id === coffee.id) ? "Aggiunto" : "Confronta"}
+                        </button>
                     </div>
                 </div>
             </div>
