@@ -57,7 +57,7 @@ export default function ModalCompare() {
                             <table className="table compare-table table-bordered table-striped text-center align-middle">
                                 <thead className='table-dark'>
                                     <tr>
-                                        <th className='w-25'>Caratteristica</th>
+                                        <th className='w-10'>Caratteristica</th>
                                         {coffeesToCompare.map((coffee, index) => (
                                             <th key={index}>{coffee.title}</th>
                                         ))}
