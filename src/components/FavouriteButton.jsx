@@ -1,10 +1,9 @@
-import { useMemo } from 'react';
 import { useFavourite } from '../contexts/FavouriteContext';
 
 
 export default function FavoriteButton({ coffee }) {
     const { favourites, setFavourites } = useFavourite();
-    const isFavorite = useMemo(() => favourites.some(c => c.id === coffee.id), [favourites]);
+    const isFavorite = favourites.some(c => c.id === coffee.id);
 
     const handleFavorite = (coffee) => {
         setFavourites(prev => {

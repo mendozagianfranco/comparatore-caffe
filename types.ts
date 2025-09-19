@@ -10,6 +10,6 @@ export type Coffee = {
     flavorNotes?: string[];
     intensity: number;
     description: string;
-    isDecaf?: boolean;
+    isDecaf: boolean;
     imageUrl: string;
 };

@@ -16,9 +16,12 @@ export default function ModalCompare() {
                 );
 
                 const results = await Promise.all(promises);
+                if (results.message) {
+                    throw new Error(results.message);
+                }
                 setCoffeesToCompare(results.map(r => r.coffee));
             } catch (error) {
-                console.error("Errore nel fetch dei caffè:", error);
+                console.error(error);
             }
         };
 
