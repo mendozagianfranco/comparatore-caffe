@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useFavourite } from '../contexts/FavouriteContext';
 
 export default function Header() {
-    const { favourites, setFavourites } = useFavourite();
+    const { favourites, updateFavourites } = useFavourite();
     const navigate = useNavigate();
 
     const handleClick = (id) => {
@@ -38,7 +38,7 @@ export default function Header() {
                                             <small className="text-muted">{coffee.category}</small>
                                         </div>
                                         <button
-                                            onClick={() => setFavourites(prev => prev.filter(c => c.id !== coffee.id))}
+                                            onClick={() => updateFavourites(prev => prev.filter(c => c.id !== coffee.id))}
                                             className="btn btn-sm btn-outline-danger"
                                             title="Rimuovi dai preferiti"
                                         >

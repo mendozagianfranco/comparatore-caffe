@@ -2,11 +2,11 @@ import { useFavourite } from '../contexts/FavouriteContext';
 
 
 export default function FavoriteButton({ coffee }) {
-    const { favourites, setFavourites } = useFavourite();
+    const { favourites, updateFavourites } = useFavourite();
     const isFavorite = favourites.some(c => c.id === coffee.id);
 
     const handleFavorite = (coffee) => {
-        setFavourites(prev => {
+        updateFavourites(prev => {
             if (isFavorite) {
                 return prev.filter(c => c.id !== coffee.id);
             }
