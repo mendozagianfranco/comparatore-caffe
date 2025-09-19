@@ -36,6 +36,7 @@
         "intensity": 8,
         "isDecaf": false,
         "id": 2,
+        "description": "Un caffè scuro e intenso, dal gusto deciso con note di caramello e cacao, ideale per chi ama i sapori forti.",
         "createdAt": "2025-09-15T13:30:05.676Z",
         "updatedAt": "2025-09-15T13:30:05.676Z",
         "imageUrl": "https://images.unsplash.com/photo-1510776537653-6d0da167186c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -56,6 +57,7 @@
         "intensity": 5,
         "isDecaf": false,
         "id": 3,
+        "description": "Un blend leggero e fruttato, perfetto per la mattina, con note fresche di frutti rossi e miele.",
         "createdAt": "2025-09-15T13:30:14.109Z",
         "updatedAt": "2025-09-15T13:30:14.109Z",
         "imageUrl": "https://images.unsplash.com/photo-1678097539755-447a08d9b51e?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -76,6 +78,7 @@
         "intensity": 6,
         "isDecaf": true,
         "id": 4,
+        "description": "Espresso decaffeinato che non rinuncia al gusto, con note dolci di nocciola e vaniglia.",
         "createdAt": "2025-09-15T13:30:35.270Z",
         "updatedAt": "2025-09-15T13:30:35.270Z",
         "imageUrl": "https://images.unsplash.com/photo-1609007607470-60928593fdd7?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -96,6 +99,7 @@
         "intensity": 9,
         "isDecaf": false,
         "id": 5,
+        "description": "Una tostatura scura e robusta, con intense note di cioccolato fondente e spezie aromatiche.",
         "createdAt": "2025-09-15T13:30:45.396Z",
         "updatedAt": "2025-09-15T13:30:45.396Z",
         "imageUrl": "https://images.unsplash.com/photo-1581447355330-7402a2f6f93e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -116,6 +120,7 @@
         "intensity": 7,
         "isDecaf": false,
         "id": 6,
+        "description": "Caffè colombiano dal gusto pieno e bilanciato, con dolci note di caramello e frutta secca.",
         "createdAt": "2025-09-15T13:30:55.164Z",
         "updatedAt": "2025-09-15T13:30:55.164Z",
         "imageUrl": "https://images.unsplash.com/photo-1622985345414-3264b2ea5761?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -136,6 +141,7 @@
         "intensity": 6,
         "isDecaf": false,
         "id": 7,
+        "description": "Un caffè etiope rinomato per il suo aroma floreale e agrumato, ideale per chi cerca freschezza in tazza.",
         "createdAt": "2025-09-15T13:31:02.277Z",
         "updatedAt": "2025-09-15T13:31:02.277Z",
         "imageUrl": "https://images.unsplash.com/photo-1595304896439-dbbee5bf740d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -156,6 +162,7 @@
         "intensity": 5,
         "isDecaf": false,
         "id": 8,
+        "description": "Capsule aromatizzate alla vaniglia, dal gusto morbido e avvolgente, perfette per un caffè cremoso.",
         "createdAt": "2025-09-15T13:31:08.395Z",
         "updatedAt": "2025-09-15T13:31:08.395Z",
         "imageUrl": "https://images.unsplash.com/photo-1649897657204-23f4dd5e125d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -176,6 +183,7 @@
         "intensity": 6,
         "isDecaf": false,
         "id": 9,
+        "description": "Chicchi aromatici dal gusto dolce e cremoso, con note di caramello e latte.",
         "createdAt": "2025-09-15T13:31:13.934Z",
         "updatedAt": "2025-09-15T13:31:13.934Z",
         "imageUrl": "https://images.unsplash.com/photo-1594421606417-69c20195f1d6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -196,8 +204,219 @@
         "intensity": 4,
         "isDecaf": true,
         "id": 10,
+        "description": "Un blend decaffeinato dal profilo dolce e fruttato, con note di miele e frutti rossi, perfetto per ogni momento della giornata.",
         "createdAt": "2025-09-15T13:31:20.525Z",
         "updatedAt": "2025-09-15T13:31:20.525Z",
         "imageUrl": "https://images.unsplash.com/photo-1600785368693-5ae725c1106d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Sumatra Mandheling",
+        "category": "Chicchi",
+        "brand": "Caffè Nero",
+        "origin": "Indonesia",
+        "roastLevel": "Scuro",
+        "price": 15,
+        "weight": 250,
+        "caffeineContent": 105,
+        "flavorNotes": [
+            "terra",
+            "spezie"
+        ],
+        "intensity": 8,
+        "isDecaf": false,
+        "id": 11,
+        "description": "Chicchi robusti dal corpo pieno e note terrose e speziate, perfetto per chi ama il caffè intenso.",
+        "createdAt": "2025-09-19T10:00:00.000Z",
+        "updatedAt": "2025-09-19T10:00:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1594421606417-69c20195f1d6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Brazil Santos",
+        "category": "Macinato",
+        "brand": "Lavazza",
+        "origin": "Brasile",
+        "roastLevel": "Medio",
+        "price": 11,
+        "weight": 500,
+        "caffeineContent": 100,
+        "flavorNotes": [
+            "nocciola",
+            "caramello"
+        ],
+        "intensity": 7,
+        "isDecaf": false,
+        "id": 12,
+        "description": "Caffè macinato dal gusto bilanciato, con note di nocciola e caramello, ideale per ogni momento della giornata.",
+        "createdAt": "2025-09-19T10:01:00.000Z",
+        "updatedAt": "2025-09-19T10:01:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1595304896439-dbbee5bf740d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Espresso Decaf Capsule",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Colombia",
+        "roastLevel": "Medio",
+        "price": 16,
+        "weight": 100,
+        "caffeineContent": 0,
+        "flavorNotes": [
+            "cioccolato",
+            "caramello"
+        ],
+        "intensity": 6,
+        "isDecaf": true,
+        "id": 13,
+        "description": "Capsule decaffeinate dal gusto intenso, con note di cioccolato e caramello.",
+        "createdAt": "2025-09-19T10:02:00.000Z",
+        "updatedAt": "2025-09-19T10:02:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1678097539755-447a08d9b51e?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Guatemala Antigua",
+        "category": "Chicchi",
+        "brand": "Illy",
+        "origin": "Guatemala",
+        "roastLevel": "Medio",
+        "price": 14,
+        "weight": 250,
+        "caffeineContent": 95,
+        "flavorNotes": [
+            "cioccolato",
+            "frutta secca"
+        ],
+        "intensity": 7,
+        "isDecaf": false,
+        "id": 14,
+        "description": "Chicchi aromatici dal gusto pieno e rotondo, con dolci note di cioccolato e frutta secca.",
+        "createdAt": "2025-09-19T10:03:00.000Z",
+        "updatedAt": "2025-09-19T10:03:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1701256406762-9036005cca42?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Kenya AA",
+        "category": "Macinato",
+        "brand": "Segafredo",
+        "origin": "Kenya",
+        "roastLevel": "Chiaro",
+        "price": 17,
+        "weight": 250,
+        "caffeineContent": 90,
+        "flavorNotes": [
+            "citrus",
+            "frutti rossi"
+        ],
+        "intensity": 6,
+        "isDecaf": false,
+        "id": 15,
+        "description": "Caffè macinato etiope dal gusto fresco e agrumato, con note di frutti rossi.",
+        "createdAt": "2025-09-19T10:04:00.000Z",
+        "updatedAt": "2025-09-19T10:04:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1581447355330-7402a2f6f93e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Vanilla Espresso Capsule",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Vietnam",
+        "roastLevel": "Medio",
+        "price": 18,
+        "weight": 120,
+        "caffeineContent": 90,
+        "flavorNotes": [
+            "vaniglia",
+            "latte"
+        ],
+        "intensity": 5,
+        "isDecaf": false,
+        "id": 16,
+        "description": "Capsule aromatizzate alla vaniglia dal gusto morbido e cremoso, perfette per un espresso delicato.",
+        "createdAt": "2025-09-19T10:05:00.000Z",
+        "updatedAt": "2025-09-19T10:05:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1678097539755-447a08d9b51e?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Costa Rican Tarrazu",
+        "category": "Chicchi",
+        "brand": "Starbucks",
+        "origin": "Costa Rica",
+        "roastLevel": "Medio",
+        "price": 16,
+        "weight": 250,
+        "caffeineContent": 100,
+        "flavorNotes": [
+            "citrus",
+            "miele"
+        ],
+        "intensity": 7,
+        "isDecaf": false,
+        "id": 17,
+        "description": "Chicchi dal gusto fresco e bilanciato, con note di agrumi e miele.",
+        "createdAt": "2025-09-19T10:06:00.000Z",
+        "updatedAt": "2025-09-19T10:06:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1594421606417-69c20195f1d6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Hazelnut Latte Capsule",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Brasile",
+        "roastLevel": "Medio",
+        "price": 17,
+        "weight": 120,
+        "caffeineContent": 85,
+        "flavorNotes": [
+            "nocciola",
+            "latte"
+        ],
+        "intensity": 5,
+        "isDecaf": false,
+        "id": 18,
+        "description": "Capsule aromatizzate alla nocciola, dal gusto dolce e cremoso, ideali per un caffè aromatico.",
+        "createdAt": "2025-09-19T10:07:00.000Z",
+        "updatedAt": "2025-09-19T10:07:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1678097539755-447a08d9b51e?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Ristretto Chicchi",
+        "category": "Chicchi",
+        "brand": "Caffè Nero",
+        "origin": "Italia",
+        "roastLevel": "Scuro",
+        "price": 15,
+        "weight": 250,
+        "caffeineContent": 110,
+        "flavorNotes": [
+            "cioccolato fondente",
+            "spezie"
+        ],
+        "intensity": 9,
+        "isDecaf": false,
+        "id": 19,
+        "description": "Chicchi intensi dal corpo pieno e persistente, con note di cioccolato fondente e spezie aromatiche.",
+        "createdAt": "2025-09-19T10:08:00.000Z",
+        "updatedAt": "2025-09-19T10:08:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1701256406762-9036005cca42?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "Colombian Decaf Capsule",
+        "category": "Capsule",
+        "brand": "Nespresso",
+        "origin": "Colombia",
+        "roastLevel": "Medio",
+        "price": 16,
+        "weight": 100,
+        "caffeineContent": 0,
+        "flavorNotes": [
+            "caramello",
+            "cioccolato"
+        ],
+        "intensity": 6,
+        "isDecaf": true,
+        "id": 20,
+        "description": "Capsule decaffeinate dal gusto dolce e bilanciato, con note di caramello e cioccolato.",
+        "createdAt": "2025-09-19T10:09:00.000Z",
+        "updatedAt": "2025-09-19T10:09:00.000Z",
+        "imageUrl": "https://images.unsplash.com/photo-1649897657204-23f4dd5e125d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]
