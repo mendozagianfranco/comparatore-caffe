@@ -63,6 +63,11 @@ nav input::placeholder {
     background-color: #e65c2e;
 }
 
+.btn-compare:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 .sidebar {
     background-color: var(--color-espresso);
     color: var(--color-latte)
@@ -132,11 +137,6 @@ nav input::placeholder {
     border-radius: 5px;
     border: 1px solid var(--color-moka);
     text-wrap: nowrap;
-}
-
-.btn-compare:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
 }
 
 .toast {
