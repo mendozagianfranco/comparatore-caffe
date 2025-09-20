@@ -54,6 +54,7 @@ export default function ModalCompare() {
                     </div>
                     <div className="modal-body">
                         <div className="table-responsive rounded">
+                            {/* Tabella Comparazione */}
                             <table className="table compare-table table-bordered table-striped text-center align-middle">
                                 <thead className='table-dark'>
                                     <tr>

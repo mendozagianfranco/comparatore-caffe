@@ -5,6 +5,8 @@ import CoffeeDetailPage from './pages/CoffeeDetailPage';
 import { FavouriteProvider } from './contexts/FavouriteContext';
 import { GlobalContextProvider } from './contexts/GlobalContext';
 
+export const MAX_ITEMS = 5;
+
 function App() {
   return (
     <BrowserRouter>

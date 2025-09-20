@@ -1,6 +1,7 @@
 import { useGlobalContext } from '../contexts/GlobalContext';
-
+import { MAX_ITEMS } from '../App';
 export default function ToastMessage() {
+
     const { showMaxMessage } = useGlobalContext();
     return (
         showMaxMessage && (
@@ -12,7 +13,7 @@ export default function ToastMessage() {
             >
                 <div className="d-flex">
                     <div className="toast-body">
-                        Puoi confrontare massimo 5 caffè
+                        Puoi confrontare massimo {MAX_ITEMS} caffè
                     </div>
                 </div>
             </div>

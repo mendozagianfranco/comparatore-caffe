@@ -1,6 +1,7 @@
 import { useGlobalContext } from '../contexts/GlobalContext';
 import ModalCompare from './ModalCompare';
 import ToastMessage from './ToastMessage';
+
 export default function CompareList() {
 
     const { compareList, setCompareList } = useGlobalContext();

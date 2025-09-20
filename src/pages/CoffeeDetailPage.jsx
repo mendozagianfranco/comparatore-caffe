@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../contexts/GlobalContext';
 import FavoriteButton from '../components/FavouriteButton';
+import { MAX_ITEMS } from '../App';
 
 export default function CoffeeDetailPage() {
 
@@ -12,7 +13,7 @@ export default function CoffeeDetailPage() {
 
     function handleCompare(coffee) {
         setCompareList(prev => {
-            if (prev.length >= 5) {
+            if (prev.length >= MAX_ITEMS) {
                 setShowMaxMessage(true);
                 setTimeout(() => setShowMaxMessage(false), 2000);
                 return prev;

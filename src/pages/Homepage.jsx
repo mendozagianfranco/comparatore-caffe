@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import FavouriteButton from '../components/FavouriteButton';
 import { useGlobalContext } from '../contexts/GlobalContext';
+import { MAX_ITEMS } from '../App';
 
 function debounce(callback, delay) {
     let timer;
@@ -26,7 +27,7 @@ export default function Homepage() {
 
     function handleCompare(coffee) {
         setCompareList(prev => {
-            if (prev.length >= 5) {
+            if (prev.length >= MAX_ITEMS) {
                 setShowMaxMessage(true);
                 setTimeout(() => setShowMaxMessage(false), 2000);
                 return prev;
@@ -72,6 +73,7 @@ export default function Homepage() {
             <div className="my-container text-center ">
                 <div className="row justify-content-center mt-4">
                     <div className="col-12 col-md-6">
+                        {/* Barra di Ricerca */}
                         <input
                             type="text"
                             className="form-control"
@@ -82,8 +84,10 @@ export default function Homepage() {
                 </div>
                 <div className="row mt-4 gx-4">
                     <div className="col-3">
+                        {/* Sidebar */}
                         <div className="p-3 rounded sidebar" >
                             <div className="mb-3 text-start">
+                                {/* Filtro per categoria */}
                                 <h5>Categoria</h5>
                                 <select
                                     id="category"
@@ -98,6 +102,7 @@ export default function Homepage() {
                                 </select>
                             </div>
                             <div className="mb-3 text-start">
+                                {/* Ordinamento */}
                                 <h5 >Ordine alfabetico</h5>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked={sortOrder === 1} onChange={() => setSortOrder(1)} />
@@ -116,6 +121,7 @@ export default function Homepage() {
                     </div>
                     <div className="col-9">
                         <div className="row g-3">
+                            {/* Lista dei caffe */}
                             {filteredAndSortedCoffees.length > 0 ? filteredAndSortedCoffees.map(coffee => (
                                 <div key={coffee.id} className="col-12 col-md-6">
                                     <div className="card mb-3">
@@ -141,10 +147,11 @@ export default function Homepage() {
                                         </div>
                                     </div>
                                 </div>
-                            )) : <div className="text-center p-4">
-                                <h5><i className="fa-solid fa-mug-hot"></i> Nessun caffè trovato</h5>
-                                <p>Abbiamo cercato dappertutto, ma il caffè che cerchi deve essere dietro la moka...</p>
-                            </div>}
+                            )) :
+                                <div className="text-center p-4">
+                                    <h5><i className="fa-solid fa-mug-hot"></i> Nessun caffè trovato</h5>
+                                    <p>Abbiamo cercato dappertutto, ma il caffè che cerchi deve essere dietro la moka...</p>
+                                </div>}
                         </div>
                     </div>
                 </div>
