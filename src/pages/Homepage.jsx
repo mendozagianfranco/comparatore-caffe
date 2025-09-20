@@ -52,9 +52,7 @@ export default function Homepage() {
         let filteredCoffees = [...coffees];
         if (searchQuery.trim() !== "") {
             const lowerQuery = searchQuery.toLowerCase();
-            filteredCoffees = filteredCoffees.filter(coffee =>
-                coffee.title.toLowerCase().includes(lowerQuery)
-            );
+            filteredCoffees = filteredCoffees.filter(coffee => coffee.title.toLowerCase().includes(lowerQuery));
         }
 
         if (sortCategory === 'Chicchi') {
@@ -134,6 +132,7 @@ export default function Homepage() {
                                                     </span>
                                                 </p>
                                             </Link>
+
                                             <div className="mt-3 d-flex gap-2">
                                                 <button
                                                     className="btn btn-compare"
@@ -142,6 +141,7 @@ export default function Homepage() {
                                                 >
                                                     {compareList.some(c => c.id === coffee.id) ? "Aggiunto" : "Confronta"}
                                                 </button>
+
                                                 <FavouriteButton coffee={coffee} />
                                             </div>
                                         </div>
