@@ -70,7 +70,8 @@ nav input::placeholder {
 
 .sidebar {
     background-color: var(--color-espresso);
-    color: var(--color-latte)
+    color: var(--color-latte);
+    top: 10%
 }
 
 .my-container {

@@ -83,7 +83,7 @@ export default function Homepage() {
                 <div className="row mt-4 gx-4">
                     <div className="col-3">
                         {/* Sidebar */}
-                        <div className="p-3 rounded sidebar" >
+                        <div className="p-3 rounded sidebar position-sticky">
                             <div className="mb-3 text-start">
                                 {/* Filtro per categoria */}
                                 <h5>Categoria</h5>
