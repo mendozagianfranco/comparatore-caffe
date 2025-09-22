@@ -64,11 +64,11 @@ export default function CoffeeDetailPage() {
                     <ul className="list-unstyled mt-3">
                         <li><strong>Brand:</strong> {coffee.brand}</li>
                         <li><strong>Origine:</strong> {coffee.origin}</li>
-                        <li><strong>Livello di Tostatura:</strong> {coffee.roastLevel}</li>
+                        {coffee.roastLevel && <li><strong>Livello di Tostatura:</strong>{coffee.roastLevel}</li>}
                         <li><strong>Intensità:</strong> {coffee.intensity}/10</li>
                         <li><strong>Contenuto di Caffeina:</strong> {coffee.caffeineContent} mg</li>
-                        <li><strong>Peso:</strong> {coffee.weight} g</li>
-                        <li><strong>Prezzo:</strong> {coffee.price ? `€${coffee.price.toFixed(2)}` : "N/A"}</li>
+                        {coffee.weight && <li><strong>Peso:</strong>{coffee.weight} g</li>}
+                        <li><strong>Prezzo:</strong> {coffee.price ? `€${coffee.price.toFixed(2)}` : "Non Disponibile"}</li>
                     </ul>
 
                     {coffee.flavorNotes?.length > 0 && (
