@@ -17,10 +17,10 @@ Permette di esplorare vari prodotti, visualizzare i dettagli di ciascuno, salvar
 
 Il progetto è suddiviso in due repository principali:
 
-- **Frontend (React):** [progetto-finale-spec-frontend-front](https://github.com/mendozagianfranco/progetto-finale-spec-frontend-front)  
+- **Frontend (React):** [comparatore-caffe](https://github.com/mendozagianfranco/comparatore-caffe)  
   → Gestisce l’interfaccia utente, le interazioni, la logica di comparazione e la persistenza dei preferiti tramite LocalStorage.
 
-- **Backend (API):** [progetto-finale-spec-frontend-back](https://github.com/mendozagianfranco/progetto-finale-spec-frontend-back)  
+- **Backend (API):** [comparatore-caffe-backend](https://github.com/mendozagianfranco/comparatore-caffe-backend)  
   → Espone le API REST per fornire i dati dei caffè e le relative informazioni di dettaglio.
 
 Il frontend comunica con il backend tramite richieste HTTP, consentendo di ottenere, filtrare e visualizzare i prodotti in modo dinamico.
@@ -59,3 +59,4 @@ npm install
 ```bash
 npm run dev
 ```
+
